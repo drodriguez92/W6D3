@@ -1,0 +1,9 @@
+<% if current_user.follows?(user) %>
+  <form action="<%= user_follow_url(user) %>" method="post">
+    <button class="follow-toggle" type="button" name="button"></button>
+  </form>
+<% else %>
+  <form action="<%= user_follow_url(user) %>" method="post">
+    <button class="follow-toggle" type="button" name="button"></button>
+  </form>
+<% end %>
